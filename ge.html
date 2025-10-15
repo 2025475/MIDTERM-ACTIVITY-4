@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form method="post">
+        <fieldset>
+            <legend>User Registration</legend>
+            
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name">
+            
+            <!-- Email (email input) -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address">
+            
+            <!-- Age (number input) -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="100">
+            
+            <!-- Password (password input) -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password">
+            
+            <!-- Gender (radio inputs) -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male"> <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female"> <label for="female">Female</label><br>
+            <input type="radio" id="other" name="gender" value="other"> <label for="other">Other</label><br>
+            
+            <!-- Interests (checkbox inputs) -->
+            <label>Interests:</label>
+            <input type="checkbox" id="reading" name="interests" value="reading"> <label for="reading">Reading</label><br>
+            <input type="checkbox" id="sports" name="interests" value="sports"> <label for="sports">Sports</label><br>
+            <input type="checkbox" id="music" name="interests" value="music"> <label for="music">Music</label><br>
+            
+            <!-- Country (select dropdown) -->
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">Select a country</option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+            </select>
+            
+            <!-- Bio (textarea input) -->
+            <label for="bio">Bio:</label>
+            <textarea id="bio" name="bio" rows="5" placeholder="Tell us about yourself"></textarea>
+            
+            <!-- Submit Button -->
+            <button type="submit">Register</button>
+        </fieldset>
+    </form>
+</body>
+</html>
